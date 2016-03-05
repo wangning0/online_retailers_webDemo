@@ -1,0 +1,184 @@
+/*
+	可根据实际情况来进行css的样式重置
+*/
+body,h1,h2,h3,h4,h5,p,dd,dl,ul,ol,form,input,textarea,th,td,select{margin: 0;padding: 0}
+em{font-style: normal;}/*不会斜*/
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: top;}/*图片对齐*/
+table{border-collapse: collapse;}
+input,textarea{outline: none;}
+textarea{resize:none;overflow: auto;}/*textarea在浏览器的大小发生变化的时候也会变化*/
+body{font-size: 12px;}/* 这个根据设计图不同而变化*/
+
+/*public*/
+
+.fl{float: left}
+.fr{float: right}
+/*清楚浮动的使用方法*/
+.clear { zoom:1;}
+.clear:after { content:''; display:block; clear:both; }
+.gradient{
+	background: -webkit-linear-gradient(top,#FFFFFF,#f8f8f8);
+	background: -moz-linear-gradient(top,#FFFFFF,#f8f8f8);
+	background: -ms-linear-gradient(top,#FFFFFF,#f8f8f8);
+	background: gradient(top,#FFFFFF,#f8f8f8);
+}
+
+
+/*样式*/
+/*
+	1.先把所有的公共样式都提炼出来
+*/
+#header,#nav,.content{width: 960px;margin: 0 auto;}
+#search,.section,.side_section,#footer{border: 1px solid #dbdbdb;border-radius: 6px;}
+.section,.options,.main_ad,.side_section,.side_ad,.ad_border{margin-bottom: 10px;}
+
+
+body{
+	margin-bottom: 30px;
+}
+#header{
+	height: 30px;
+	border-right: 0 0 6px 6px;
+}
+#nav{
+	height: 100px;
+	background: #FFc;
+}
+#search{
+	width: 958px;
+	height: 114px;
+	margin: 0 auto 10px;
+}
+.main{
+	width: 710px;
+}
+.section{
+	width: 318px;
+	padding: 0 15px;
+	height: 200px;
+}
+.options{
+	width: 350px;
+	height: 200px;
+	position: relative;/*为了解决ie6的问题选项卡 因为左右的高度不同，从而导致一边高一边低*/
+}
+.main_ad{
+	/*想让图片有一个圆角，加上一个hidden属性*/
+	border-radius: 6px;
+	overflow: hidden;
+}
+.side{
+	width: 240px;
+}
+.side_section{
+	height: 60px;
+}
+.side_ad{
+	border-radius: 6px;
+	overflow: hidden;
+}
+#footer{
+	width: 958px;
+	height: 78px;
+	background: #f9f9f9;
+	margin: 0 auto;
+}
+
+
+.ad_border{
+	width: 238px;
+	height: 88px;
+	overflow: hidden;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px;
+}
+
+.options .nav{
+	height: 34px;
+}
+.options .nav li{
+	width: 172px;
+	height: 33px;
+	border: 1px solid #dbdbdb;
+	border-bottom:none;
+	border-radius: 6px 6px 0 0;
+} 
+.options .nav .active{
+	background: white;
+	position: absolute;
+	width: 172px;
+	height: 34px;
+	z-index: 2;
+}
+.options .con{
+	width: 348px; 
+	border: 1px solid #dbdbdb;
+	border-radius: 0 0 6px 6px;
+	height: 100px;
+	position: absolute;
+	top: 34px;
+	left: 0px;
+	z-index: 1;
+}
+
+
+
+#header .city{
+	line-height: 30px;
+	padding-left: 20px;
+}
+#header .city a{
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	box-shadow: 1px 1px 0px #ccc;
+	height: 18px;
+	display: inline-block;
+	line-height: 18px;
+	padding: 0 7px;
+	background: white;
+	color: #999;
+}
+#header .city .active{
+	color: #d60d03;
+}
+#header .city a:hover{
+	color: red;
+	background-color: white;
+}
+#header .link{
+	line-height: 30px;
+	padding-right: 20px;
+	color: #d5d5d5;
+}
+#header .link a{
+	color: #666;
+	background: url(../img/header_link_bg.gif) no-repeat;
+	padding-left: 18px;
+	padding-right: 7px;
+}
+#header .link a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#header .link .icon1{
+	background-position: 0 0;
+}	
+#header .link .icon2{
+	background-position: 0 -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
